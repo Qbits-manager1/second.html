@@ -1,55 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="shortcut icon" href="book.svg" type="image/x-icon" <title>Document</title>
 </head>
 <style>
-    p{
-        color:blueviolet;
+    p {
+        color: blueviolet;
         font-family: 'Courier New', 'Courier New', Courier, monospace;
     }
+
+    .circle {
+        border-radius: 50%;
+        background-color: red;
+        border-color: blueviolet;
+    }
 </style>
+
 <body>
-    <h3> This is a sample document  containing formatting tags </h3>
+    <h3> This is a sample document containing formatting tags </h3>
+    <nav>
+        <a href="#"> Home</a>
+        <a href="#"> About Us</a>
+        <a href="#"> Contact us</a>
+        <a href="#"> Careers</a>
+    </nav>
     <hr>
     <strong> This is the tag to show strong content</strong>
     <b> This is bold tag</b>
     <p>base<sup>power</sup></p>
     <code>This is a code block </code>
     <blockquote> at reference to xxxx website</blockquote>
-    
+
     <h2> These are the Input tags </h2>
-    <div> 
-         <label for="username"> Username    <input type="text" name="username" id="username" /></label>  
-         <br><br>
-         <label for="pwd"> Password<input type="password" name="password" id="pwd" /></label>  
-<select name="" id="">
-    <option>
-        car
-    </option>
-    <option>
-        auto
-    </option>
-</select>
+    <div>
+        <form>
+            <fieldset>
+                <legend>Login </legend>
 
-English<input type="checkbox" name="chk" id="lang" />
-French<input type="checkbox" name="chk" id="lang" />
-Hindi<input type="checkbox" name="chk" id="lang" />
 
-Male<input type="radio" name="rad" id="gender" />
-Female<input type="radio" name="rad" id="gender" />
+
+                <label for="username"> Username <input type="text" name="username" id="username" required /></label>
+                <br><br>
+                <label for="pwd"> Password<input type="password" name="password" id="pwd" required minlength="6"
+                        maxlength="12" /></label>
+                <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+    </div>
+    <br>
+    selection using options Type 1
+    <select name="" id="">
+        <option>
+            car
+        </option>
+        <option>
+            auto
+        </option>
+    </select>
+    <br>
+    <br>
+    Select any language
+    English<input type="checkbox" name="chk" id="lang" />
+    French<input type="checkbox" name="chk" id="lang" />
+    Hindi<input type="checkbox" name="chk" id="lang" /> <br>
+    Select any gender
+    Male<input type="radio" name="rad" id="gender" />
+    Female<input type="radio" name="rad" id="gender" /> <br>
 
     </div>
 
     <div id="vehicle-instructions">
-<h1> New content added</h1>
+        <h1> New content added</h1>
+    </div>
+    <form>
+        <select>
+            <optgroup value="Indian Manufac" label="Indian Manufac">
+                <option value="maruti">maruti</option>
+                <option value="mahindra">mahindra</option>
+                <option value="hindustan motors">hindustan</option>
+                <option value="tata motors">tata</option>
+            </optgroup>
+            <optgroup value="Foreign Manufac" label="Indian Manufac">
+                <option value="Hyundai">Hyundai</option>
+                <option value="Volvo">Volvo</option>
+                <option value="Toyoto">Toyoto</option>
+                <option value="BMW">BMW</option>
+            </optgroup>
+        </select>
+    </form>
+    <a href="http://Google.com" target="_blank"> Google Search</a>
+    <div>
+        <h3> Images </h3>
+        <hr>
+        <img src="https://images.unsplash.com/photo-1662925438215-0230610a9d28?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80"
+            height="100px" alt="Leaves">
+        <svg width=50px length=2px> </svg>
+
+    </div>
+    <hr>
+    <div>
+        <h3>Audio and video</h3>
+        <audio controls>
+            <source src="paper.mp3" type="audio/mp3">
+            </source>
+            <source src="paper.mp3" type="audio/mp3">
+            </source>
+
+        </audio>
+        <video controls>
+            <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4"
+                type="video/mp4">
+        </video>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Fo6oU4DfdH0" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </div>
+    <hr>
+    <div>
+        <h3> Lists</h3>
+        <ol>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JS</li>
+            <li>REACT</li>
+
+        </ol>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JS</li>
+            <li>REACT</li>
+        </ul>
+        <dl>
+            <dt>Flowers </dt>
+            <dd>Jasmine </dd>
+            <dd> lily</dd>
+            <dt>Places </dt>
+            <dd>Tajmahal </dd>
+            <dd> Goa Beach</dd>
+        </dl>
+    </div>
+    <div>
+        <h3> Tables </h3>
+        <hr />
+        <table>
+            <caption> Web Dev Modules</caption>
+            <thead>
+                <tr>
+                    <th>Sr.No </th>
+                    <th>Name </th>
+
+                </tr>
+            </thead>
+            <tbody>
+
+                <tr>
+                    <td> 1 </td>
+                    <td> HtML </td>
+                </tr>
+                <tr>
+                    <td> 2 </td>
+                    <td> CSS </td>
+                </tr>
+                <tr>
+                    <td> 3 </td>
+                    <td> Javascript </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td> *NOte: Important</td>
+                </tr>
+            </tfoot>
+        </table>
     </div>
 
-    <div id ="more vehicle-instructions">
+    <div>
+        <h3> 10. Semantic/ structural</h3>
+       
+        <div>
+            This is div
+        </div>
+        <span>
+            This is span
+        </span>
+        </div>
+        <div>
+        <header>This is header </header>
+        <main> Thisis main part
+
+            <section>
+                section
+            </section>
+            <article>
+                article
+            </article>
+            <aside>aside</aside>
+
+        </main>
+        <footer>footer</footer>
+        <dialog open> dialog</dialog>
+        <details>
+            <summary>HTML5</summary>
+            <p> HTML5 provides the framework for creating websites</p>
+        </details>
+        <details>
+            <summary>CSS</summary>
+            <p> CSS is cascading style sheets</p>
+        </details>
+    </div>
+
+    <div>
+        <h3> 11. Meta Info</h3>
+        <hr/>
+        <head></head>
+<meta>
+
+<img src="images/apollo11.gif">
+    </div>
+
+<div>
+    <h3>12.Programming</h3>
+    <hr/>
+    <div id="spacex">
 
     </div>
+    
+    <script>function add(a,b){
+        return a+b
+    }
+    document.getElementById("spacex").innerHTML = "Welcome to Java sCript"
+    </script>
+    <noscript></noscript>
+    <embed src="" type="">
+        <object data="" type ="">
+
+        </object>
+        <param>
+        
+</div>
+
+
 </body>
+
+
 </html>
